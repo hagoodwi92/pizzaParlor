@@ -14,12 +14,25 @@
     <h4>Sizes: Small, Medium, Large, Giant</h4>
     <div>
       <form id="formOne">
-        <select class ="form-control" id="topping">
+        <div class = "form-group">
+          <p>Select your desired toppings below:</p>
+          <input type="checkbox" name = "topping1" value="Pepperoni">Pepperoni<br>
+          <input type="checkbox" name = "topping2" value="Cheese">Cheese<br>
+          <input type="checkbox" name = "topping3" value="Artichoke">Artichoke<br>
+          <input type="checkbox" name = "topping4" value="Anchovy">Anchovy<br>
+
+        </div>
+
+
+
+
+
+        <!-- <select class ="form-control" id="topping">
           <option>Pepperoni</option>
           <option>Cheese</option>
           <option>Artichoke</option>
           <option>Anchovy</option>
-        </select>
+        </select> -->
         <!-- <div class="form-group">
           <label for="topping">Topping</label>
           <input id="topping" class="form-control" type="text">
@@ -41,6 +54,7 @@
 
       <div id="output">
         <p>Your total cost is : <span id="cost"></span></p>
+        <p><span id = "size"></span></p>
       </div>
   
 </body>

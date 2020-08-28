@@ -14,16 +14,16 @@ Pizza.prototype.getCost = function () {
     this.cost = 30;
   }
   //add topping
-  if (this.topping == "Pepperoni"){
+  if (this.topping1 == "Pepperoni"){
      this.cost += 10;
   }
-  else if (this.topping == "Cheese"){
+  else if (this.topping2 == "Cheese"){
      this.cost += 5;
   }
-  else if (this.topping == "Artichoke") {
+  else if (this.topping3 == "Artichoke") {
     this.cost += 20;
   }
-  else if (this.topping == "Anchovy") {
+  else if (this.topping4 == "Anchovy") {
     this.cost += 15;
   }
   
@@ -35,8 +35,11 @@ Pizza.prototype.getCost = function () {
 
 
 
-function Pizza(topping, size, cost) {
-  this.topping = topping;
+function Pizza(topping1, topping2, topping3, topping4, size, cost) {
+  this.topping1 = topping1;
+  this.topping2 = topping2;
+  this.topping3 = topping3;
+  this.topping4 = topping4;
   this.size = size;
   this.cost = cost;
 }
@@ -45,12 +48,17 @@ function Pizza(topping, size, cost) {
 $(document).ready(function()  {
   $("#formOne").submit(function(event) {
     event.preventDefault();
-    const topping = $("#topping").val();
+    const Input1 = $("input:checkbox[name=topping1]:checked").val();
+    const Input2 = $("input:checkbox[name=topping2]:checked").val();
+    const Input3 = $("input:checkbox[name=topping3]:checked").val();
+    const Input4 = $("input:checkbox[name=topping4]:checked").val();
+    
     const size = $("#size").val();
     const cost = 0;
-    let pizza = new Pizza (topping, size, cost);
-    //alert("Your pizza cost is " + pizza.getCost(pizza));
+    let pizza = new Pizza (Input1, Input2, Input3, Input4, size, cost);
     $("#cost").text(pizza.getCost(pizza));
+
+    alert(pizza.topping4);
    
     
     
