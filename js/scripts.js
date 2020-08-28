@@ -1,35 +1,34 @@
 //Business logic
-/* Pizza.prototype.getCost = function () {
-  if (array contains Pizza )  {
-    add 5
+Pizza.prototype.getCost = function () {
+  if (this.topping == "pepperoni"){
+     this.cost = 10;
   }
-  if it contains cheese {
-    add 10;
+  else if (this.topping == "cheese"){
+     this.cost = 5;
   }
-  return totalCost = this.toppingCost;
-} */
+  else if(this.topping == "artichoke"){
+     this.cost = 15;
+  }
+  return this.cost;
+}
 
 
 
-function Pizza(topping1, topping2, topping3, size) {
-  this.topping1 = topping1;
-  this.topping2 = topping2;
-  this.topping3 = topping3;
+function Pizza(topping, size, cost) {
+  this.topping = topping;
   this.size = size;
+  this.cost = cost;
 }
 
 //ui
 $(document).ready(function()  {
   $("#formOne").submit(function(event) {
     event.preventDefault();
-    const topping1Input = $("input#topping1").val();
-    const topping2Input = $("input#topping2").val();
-    const topping3Input = $("input#topping3").val();
+    const topping = $("input#topping1").val();
     const size = $("input#size").val();
-
-    alert(topping2Input, topping3Input, size);
-
-    let pizza = new Pizza (topping1Input, topping2Input, topping3Input, size);
+    const cost = 0;
+    let pizza = new Pizza (topping, size, cost);
+    pizza.getCost(pizza);
     
     
 
