@@ -49,7 +49,8 @@ $(document).ready(function()  {
     const size = $("input#size").val();
     const cost = 0;
     let pizza = new Pizza (topping, size, cost);
-    alert("Your pizza cost is " + pizza.getCost(pizza));
+    //alert("Your pizza cost is " + pizza.getCost(pizza));
+    $("#cost").text(pizza.getCost(pizza));
     
     
 
