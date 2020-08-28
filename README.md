@@ -1,6 +1,6 @@
 # _Pizza Parlor_
 
-#### _This webpage simulates a pizza parlor submitting orders, Aug. 28, 2020
+#### This webpage simulates a pizza parlor submitting orders, Aug. 28, 2020
 
 #### By _**Alex Goodwin**_
 
