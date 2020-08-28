@@ -26,23 +26,21 @@ Pizza.prototype.getCost = function () {
   if (this.topping4 == "Anchovy") {
     this.cost += 5;
   }
+  if (this.topping5 == "NutritionalYeast"){
+    this.cost +=5;
+  }
   else {
     this.cost += 0;
   }
-  
-
-  
-  
   return this.cost;
 }
 
-
-
-function Pizza(topping1, topping2, topping3, topping4, size, cost) {
+function Pizza(topping1, topping2, topping3, topping4, topping5, size, cost) {
   this.topping1 = topping1;
   this.topping2 = topping2;
   this.topping3 = topping3;
   this.topping4 = topping4;
+  this.topping5 = topping5;
   this.size = size;
   this.cost = cost;
 }
@@ -55,10 +53,11 @@ $(document).ready(function()  {
     const Input2 = $("input:checkbox[name=topping2]:checked").val();
     const Input3 = $("input:checkbox[name=topping3]:checked").val();
     const Input4 = $("input:checkbox[name=topping4]:checked").val();
+    const Input5 = $("input:checkbox[name=topping5]:checked").val();
     
     const size = $("#size").val();
     const cost = 0;
-    let pizza = new Pizza (Input1, Input2, Input3, Input4, size, cost);
+    let pizza = new Pizza (Input1, Input2, Input3, Input4, Input5, size, cost);
     $("#cost").text(pizza.getCost(pizza));
 
 

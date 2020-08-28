@@ -12,7 +12,6 @@
     <h1>Pizza Parlor</h1>
     <h3>Options: Pepperoni, Cheese, Artichoke, Anchovy</h3>
     <h4>Sizes: Small($5), Medium($10), Large($15), Giant($30)</h4>
-    <div>
       <form id="formOne">
         <div class = "form-group">
           <p>Select your desired toppings below(5$ each):</p>
@@ -20,42 +19,21 @@
           <input type="checkbox" name = "topping2" value="Cheese">Cheese<br>
           <input type="checkbox" name = "topping3" value="Artichoke">Artichoke<br>
           <input type="checkbox" name = "topping4" value="Anchovy">Anchovy<br>
-
+          <input type="checkbox" name = "topping5" value="NutritionalYeast">Nutritional Yeast<br>
         </div>
-
-
-
-
-
-        <!-- <select class ="form-control" id="topping">
-          <option>Pepperoni</option>
-          <option>Cheese</option>
-          <option>Artichoke</option>
-          <option>Anchovy</option>
-        </select> -->
-        <!-- <div class="form-group">
-          <label for="topping">Topping</label>
-          <input id="topping" class="form-control" type="text">
-        </div> -->
-
-
         <select class ="form-control" id="size">
           <option>Small</option>
           <option>Medium</option>
           <option>Large</option>
           <option>Giant</option>
         </select>
-        <!-- <div class="form-group">
-          <label for="size">Size</label>
-          <input id="size" class="form-control" type="text">
-        </div> -->
         <button type="submit" class="btn-primary">Submit</button>
       </form>
-
       <div id="output">
         <p>Your total cost is : <span id="cost"></span></p>
         <p><span id = "size"></span></p>
       </div>
-  
+
+  </div>
 </body>
 </html>
