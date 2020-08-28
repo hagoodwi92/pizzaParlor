@@ -30,7 +30,7 @@ Pizza.prototype.getCost = function () {
     this.cost +=5;
   }
   else {
-    this.cost += 0;
+    this.cost += 0.00;
   }
   return this.cost;
 }

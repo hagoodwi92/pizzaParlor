@@ -5,3 +5,12 @@ h1{
   display: none;
   font-size: large;
 }
+.pizza{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+blockquote{
+  text-align: center;
+}
