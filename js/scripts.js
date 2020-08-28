@@ -58,6 +58,8 @@ function Pizza(topping1, topping2, topping3, topping4, topping5, size, cost) {
 }
 
 //ui
+let pizzaBook = new PizzaBook();
+
 $(document).ready(function()  {
   $("#formOne").submit(function(event) {
     event.preventDefault();
@@ -69,17 +71,16 @@ $(document).ready(function()  {
     
     const size = $("input:radio[name=size]:checked").val();
     const cost = 0;
-    let pizzaBook = new PizzaBook();
+    
     let pizza = new Pizza (Input1, Input2, Input3, Input4, Input5, size, cost);
     pizzaBook.addPizza(pizza);
-    console.log(pizzaBook.pizzas);
-    
-
     $("#cost").text(pizza.getCost(pizza));
     $("#output").show();
     $(".alert").show();
     $("#pizzaSize").text(pizza.size);
-
+    console.log(pizzaBook.pizzas);
+    $("#orders").text.toString((pizzaBook.pizzas));
+    
 
 })
 
