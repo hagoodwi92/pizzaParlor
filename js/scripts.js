@@ -15,16 +15,19 @@ Pizza.prototype.getCost = function () {
   }
   //add topping
   if (this.topping1 == "Pepperoni"){
-     this.cost += 10;
-  }
-  else if (this.topping2 == "Cheese"){
      this.cost += 5;
   }
-  else if (this.topping3 == "Artichoke") {
-    this.cost += 20;
+  if (this.topping2 == "Cheese"){
+     this.cost += 5;
   }
-  else if (this.topping4 == "Anchovy") {
-    this.cost += 15;
+  if (this.topping3 == "Artichoke") {
+    this.cost += 5;
+  }
+  if (this.topping4 == "Anchovy") {
+    this.cost += 5;
+  }
+  else {
+    this.cost += 0;
   }
   
 
@@ -58,10 +61,6 @@ $(document).ready(function()  {
     let pizza = new Pizza (Input1, Input2, Input3, Input4, size, cost);
     $("#cost").text(pizza.getCost(pizza));
 
-    alert(pizza.topping4);
-   
-    
-    
 
 })
 
