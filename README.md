@@ -10,7 +10,7 @@ This webpage simulates customer's placing orders at a pizza restaurant. It calcu
 
 ## Setup/Installation Requirements
 
-* Clone pizza repository.
+* Clone pizzaParlor repository.
 * Open index.html in desired web browser.
 
 ## Known Bugs
