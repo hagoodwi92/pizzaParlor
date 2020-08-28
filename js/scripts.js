@@ -1,29 +1,29 @@
 //Business logic
 Pizza.prototype.getCost = function () {
   //check size
-  if(this.size == "small")  {
+  if(this.size == "Small")  {
     this.cost = 5;
   }
-  else if(this.size == "medium")  {
+  else if(this.size == "Medium")  {
     this.cost = 10;
   }
-  else if(this.size == "large") {
+  else if(this.size == "Large") {
     this.cost = 15;
   }
-  else if (this.size == "giant")  {
+  else if (this.size == "Giant")  {
     this.cost = 30;
   }
   //add topping
-  if (this.topping == "pepperoni"){
+  if (this.topping == "Pepperoni"){
      this.cost += 10;
   }
-  else if (this.topping == "cheese"){
+  else if (this.topping == "Cheese"){
      this.cost += 5;
   }
-  else if (this.topping == "artichoke") {
+  else if (this.topping == "Artichoke") {
     this.cost += 20;
   }
-  else if (this.topping == "anchovy") {
+  else if (this.topping == "Anchovy") {
     this.cost += 15;
   }
   
@@ -45,12 +45,13 @@ function Pizza(topping, size, cost) {
 $(document).ready(function()  {
   $("#formOne").submit(function(event) {
     event.preventDefault();
-    const topping = $("input#topping").val();
-    const size = $("input#size").val();
+    const topping = $("#topping").val();
+    const size = $("#size").val();
     const cost = 0;
     let pizza = new Pizza (topping, size, cost);
     //alert("Your pizza cost is " + pizza.getCost(pizza));
     $("#cost").text(pizza.getCost(pizza));
+   
     
     
 

@@ -10,18 +10,32 @@
 <body>
   <div class="container">
     <h1>Pizza Parlor</h1>
-    <h3>Options: pepperoni, cheese, artichoke, anchovy</h3>
-    <h4>Sizes: small, medium, large, giant</h4>
+    <h3>Options: Pepperoni, Cheese, Artichoke, Anchovy</h3>
+    <h4>Sizes: Small, Medium, Large, Giant</h4>
     <div>
       <form id="formOne">
-        <div class="form-group">
+        <select class ="form-control" id="topping">
+          <option>Pepperoni</option>
+          <option>Cheese</option>
+          <option>Artichoke</option>
+          <option>Anchovy</option>
+        </select>
+        <!-- <div class="form-group">
           <label for="topping">Topping</label>
           <input id="topping" class="form-control" type="text">
-        </div>
-        <div class="form-group">
+        </div> -->
+
+
+        <select class ="form-control" id="size">
+          <option>Small</option>
+          <option>Medium</option>
+          <option>Large</option>
+          <option>Giant</option>
+        </select>
+        <!-- <div class="form-group">
           <label for="size">Size</label>
           <input id="size" class="form-control" type="text">
-        </div>
+        </div> -->
         <button type="submit" class="btn-primary">Submit</button>
       </form>
 
