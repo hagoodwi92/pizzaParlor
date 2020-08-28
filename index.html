@@ -9,16 +9,39 @@
 </head>
 <body>
   <div class="container">
-    <h1>Pizza Parlor</h1>
-    <h3>Options: Pepperoni, Cheese, Artichoke, Anchovy</h3>
-    <h4>Sizes: Small($5), Medium($10), Large($15), Giant($30)</h4>
+    <div class="jumbotron">
+      <h1>Pizza Parlor</h1>
+    </div>
+    <div class="card"> 
+      <div class="card-body"> 
+        <h2 class="card-title">Toppings($5 each):</h2>
+        <ul class="card-text">
+          <li>Pepperoni</li>
+          <li>Cheese</li>
+          <li>Artichoke</li>
+          <li>Anchovy</li>
+          <li>Nutritional Yeast</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card"> 
+      <div class="card-body"> 
+        <h2 class="card-title">Sizes:</h2>
+        <ul class="card-text">
+          <li>Small($5)</li>
+          <li>Medium($10)</li>
+          <li>Large($15)</li>
+          <li>Giant($30)</li>
+        </ul>
+      </div>  
+    </div>
       <form id="formOne">
         <div class = "form-group">
           <p>Select your desired toppings below(5$ each):</p>
-          <input type="checkbox" name = "topping1" value="Pepperoni">Pepperoni<br>
-          <input type="checkbox" name = "topping2" value="Cheese">Cheese<br>
-          <input type="checkbox" name = "topping3" value="Artichoke">Artichoke<br>
-          <input type="checkbox" name = "topping4" value="Anchovy">Anchovy<br>
+          <input type="checkbox" name = "topping1" value="Pepperoni"> Pepperoni<br>
+          <input type="checkbox" name = "topping2" value="Cheese"> Cheese<br>
+          <input type="checkbox" name = "topping3" value="Artichoke"> Artichoke<br>
+          <input type="checkbox" name = "topping4" value="Anchovy"> Anchovy<br>
           <input type="checkbox" name = "topping5" value="NutritionalYeast">Nutritional Yeast<br>
         </div>
         <select class ="form-control" id="size">
