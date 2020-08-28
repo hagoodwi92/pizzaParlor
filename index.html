@@ -37,23 +37,45 @@
     </div>
       <form id="formOne">
         <div class = "form-group">
-          <p>Select your desired toppings below(5$ each):</p>
+          <h4>Select your desired toppings:</h4>
           <input type="checkbox" name = "topping1" value="Pepperoni"> Pepperoni<br>
           <input type="checkbox" name = "topping2" value="Cheese"> Cheese<br>
           <input type="checkbox" name = "topping3" value="Artichoke"> Artichoke<br>
           <input type="checkbox" name = "topping4" value="Anchovy"> Anchovy<br>
           <input type="checkbox" name = "topping5" value="NutritionalYeast">Nutritional Yeast<br>
         </div>
-        <select class ="form-control" id="size">
-          <option>Small</option>
-          <option>Medium</option>
-          <option>Large</option>
-          <option>Giant</option>
-        </select>
+        <h4>Select your size: </h4>
+        <div class="radio">
+          <label>
+            <input type="radio" name="size" value="Small" checked>
+            Small
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="size" value="Medium">
+            Medium
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="size" value="Large">
+            Large
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="size" value="Giant">
+            Giant
+          </label>
+        </div>
         <button type="submit" class="btn-primary">Submit</button>
       </form>
       <div id="output">
-        <p>Your total cost is : <span id="cost"></span></p>
+        <div class="alert alert-success" role="alert">
+          <p>Your total today is : $<span id="cost"></span> for one (<span id="pizzaSize"></span>) pizza and your toppings.</p>
+        </div>
+        
         <p><span id = "size"></span></p>
       </div>
 

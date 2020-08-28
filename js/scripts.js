@@ -55,10 +55,14 @@ $(document).ready(function()  {
     const Input4 = $("input:checkbox[name=topping4]:checked").val();
     const Input5 = $("input:checkbox[name=topping5]:checked").val();
     
-    const size = $("#size").val();
+    const size = $("input:radio[name=size]:checked").val();
     const cost = 0;
     let pizza = new Pizza (Input1, Input2, Input3, Input4, Input5, size, cost);
     $("#cost").text(pizza.getCost(pizza));
+    $("#output").show();
+    $(".alert").show();
+
+    $("#pizzaSize").text(pizza.size);
 
 
 })
