@@ -1,4 +1,16 @@
 //Business logic
+function PizzaBook(){
+  this.pizzas = [];
+}
+
+PizzaBook.prototype.addPizza = function(pizza)  {
+  this.pizzas.push(pizza);
+}
+
+
+
+
+
 Pizza.prototype.getCost = function () {
   //check size
   if(this.size == "Small")  {
@@ -57,11 +69,15 @@ $(document).ready(function()  {
     
     const size = $("input:radio[name=size]:checked").val();
     const cost = 0;
+    let pizzaBook = new PizzaBook();
     let pizza = new Pizza (Input1, Input2, Input3, Input4, Input5, size, cost);
+    pizzaBook.addPizza(pizza);
+    console.log(pizzaBook.pizzas);
+    
+
     $("#cost").text(pizza.getCost(pizza));
     $("#output").show();
     $(".alert").show();
-
     $("#pizzaSize").text(pizza.size);
 
 
