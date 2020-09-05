@@ -8,6 +8,12 @@
 
 This webpage simulates customer's placing orders at a pizza restaurant. It calculates cost by taking into consideration the toppings and the size of pizza. 
 
+## Specs
+-Should correctly create a pizza object with properties
+-Should correctly return the cost of a user's pizza, based on toppings and pizza size
+-Should correctly add pizza objects to an array
+
+
 ## Setup/Installation Requirements
 
 * Clone pizzaParlor repository.
