@@ -17,6 +17,7 @@ This webpage simulates customer's placing orders at a pizza restaurant. It calcu
 ## Setup/Installation Requirements
 
 * Clone pizzaParlor repository.
+* Open pizza directory to view code in scripts.js,  index.html, and styles.css.
 * Open index.html in desired web browser.
 
 ## Known Bugs
