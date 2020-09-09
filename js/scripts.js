@@ -7,12 +7,6 @@ function Pizza(topping1, topping2, topping3, topping4, topping5, size, cost) {
   this.size = size;
   this.cost = cost;
 }
-function PizzaBook(){
-  this.pizzas = [];
-}
-PizzaBook.prototype.addPizza = function(pizza)  {
-  this.pizzas.push(pizza);
-}
 Pizza.prototype.getCost = function () {
   if(this.size == "Small")  {
     this.cost = 5;
@@ -44,6 +38,12 @@ Pizza.prototype.getCost = function () {
   else {
     this.cost += 0.00;
   }
+}
+function PizzaBook(){
+  this.pizzas = [];
+}
+PizzaBook.prototype.addPizza = function(pizza)  {
+  this.pizzas.push(pizza);
 }
 //ui
 let pizzaBook = new PizzaBook();

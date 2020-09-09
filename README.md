@@ -10,9 +10,16 @@ This webpage simulates customer's placing orders at a pizza restaurant. It calcu
 
 ## Specs
 * Should correctly create a pizza object with properties
+  * Sample Input: Small : Submit 
+  * Sample Output(Console): [Pizza], Pizza {topping1: undefined, topping2: undefined, topping3: undefined, topping4: undefined, topping5: undefined, …}
+  * Sample Output: "Your total today is : $5.00 for one (Small) pizza and your toppings. If you would like another pizza today, please fill out another order and submit."
 * Should correctly return the cost of a user's pizza, based on toppings and pizza size
-* Should correctly add pizza objects to an array
-
+  * Sample Input: Pepperoni, Small: Submit
+  * Sample Output: "Your total today is : $10.00 for one (Small) pizza and your toppings. If you would like another pizza today, please fill out another order and submit."
+  * Should correctly add pizza objects to an array
+  * Sample Input: Small : Submit x 2. 
+  * Sample Output(Console): [Pizza] , (2) [Pizza, Pizza]
+  * Sample Output: "Your total today is : $5.00 for one (Small) pizza and your toppings. If you would like another pizza today, please fill out another order and submit."
 
 ## Setup/Installation Requirements
 
